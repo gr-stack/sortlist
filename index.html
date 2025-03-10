@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-lg">
+      <h3>sortable and filterable table</h3>
+          <div class="form-group">
+          
+            <input type="text" class="form-control" placeholder="Username" aria-label="Enter Username" aria-describedby="basic-addon1" id="Name">
+          </div>
+          
+          <div class="form-group">
+            
+            <input type="email" class="form-control" placeholder="Enter E-mail" aria-label="Username" aria-describedby="basic-addon1" id="E-mail">
+          </div>
+      
+        <div class="form-group">
+            
+            <input type="number" class="form-control" placeholder="Enter age" aria-label="Username" aria-describedby="basic-addon1" id="age">
+          </div>
+        <div class="submit">
+            <button type="submit" onclick="submitForm()">Submit</button>
+        </div>
+    
+    <div class="table">
+          <h2 class="mt-5">User Table</h2>
+          <input type="text" id="filterInput" class="form-control mb-3" placeholder="Filter by name" oninput="filterNames()">
+          <table class="table table-bordered" id="userTable">
+
+      <thead>
+      <tr>
+        <th><div class="output" id="output">Name</div></th>
+        <th><div class="output" id="output1">Email</div></th>
+        <th><div class="output" id="output2">Age</div></th>
+      </tr>
+      </thead>
+      </table>
+    </div>
+    </div>
+</body>
